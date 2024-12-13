@@ -3,15 +3,15 @@ import { Component} from '@angular/core';
 
 
 @Component({
-  selector: 'app-dbz-main-page',
-  templateUrl: './main-page.component.html'
+  selector: 'app-dbz-main-page', //Identificación para el html
+  templateUrl: './main-page.component.html' //Ruta hacia el html
 })
 
 export class MainPageComponent {
 
-  public characters: Character[] = [{
-    name: 'Krillin',
-    power: 1000
+  public characters: Character[] = [{ //Lista personajes
+    name: 'Krillin', //Cada uno con su nombre
+    power: 1000 //y su poder
   },{
     name:'Goku',
     power: 9500
@@ -22,14 +22,16 @@ export class MainPageComponent {
 
  // onDelete = Index value: number;
 
+ //Método para agregar personajes
   onNewCharacter(character:Character): void{
     this.characters.push(character);
   }
 
+  //Método para eliminar personajes
   onDeleteCharacter(index:number){
 
     //this.characters.splice(1,2)
-    this.characters.splice(index,1);
+    this.characters.splice(index,1); //Elimina personaje en posición seleccionada
   }
 
 }

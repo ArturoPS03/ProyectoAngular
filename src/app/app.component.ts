@@ -1,9 +1,9 @@
 import { Component, numberAttribute } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-root', //Identificación para el html
+  templateUrl: './app.component.html', //Ruta del html
+  styleUrl: './app.component.css' //Ruta del css
 })
 export class AppComponent {
   public title: string = 'Hola Mundo';

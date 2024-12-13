@@ -4,14 +4,14 @@ import { CounterComponent } from "./components/counter/counter.component"
 
 @NgModule({
   declarations: [
-    CounterComponent
+    CounterComponent //Declaración componente para que sea parte de este módulo
   ],
   exports: [
-    CounterComponent
+    CounterComponent //Exportar para que sea accesible a los demás módulos
   ]
 
 
 })
-export class CounterModule{
+export class CounterModule{ //Definición módulo
 
 }

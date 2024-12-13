@@ -1,5 +1,8 @@
 <p>list works!</p>
 <h4>Listado</h4>
+
+<!--Lista con lets (isFirst: Verdadero si es primero, isLast: Verdadero si es el último,
+isEven: Verdadero si es par, isOdd: Verdadero si es impar) -->
 <ul class="list-group">
   <li *ngFor="
   let character of characterList;
@@ -16,14 +19,18 @@
     'list-group-item-primary': isEven
   }">
 
+<!--div para mostrar datos-->
   <div>
-    <span class="text-primary">{{i+1}}</span>
-    <span>{{ character.name}} - </span>
+    <span class="text-primary">{{i+1}}</span> <!--Mostrar indice-->
+    <span>{{ character.name}} - </span> <!--Mostrar nombre-->
+    <!--Mostrar poder-->
     <strong>Power: </strong>
     <span>{{character.power}}</span>
   </div>
 
-  <button class="btn btn-danger"  (click)="onDeteteCharacter(i)">X</button>
+
+  <!--Botón para eliminar personaje-->
+  <button class="btn btn-danger" (click)="onDeteteCharacter(i)" >X</button>
 
   </li>
 </ul>

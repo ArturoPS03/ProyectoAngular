@@ -1,5 +1,6 @@
 <h1>{{name}}</h1>
 
+<!--Muestra el Atributo y su valor-->
 <dl>
 <td>Nombre:</td>
 <dd>{{name}}</dd>
@@ -24,6 +25,8 @@ ve como un valor-->
  tipo de dato como que sean idénticos, dado el caso
  entocnes se muestra
  únicamente ese botón -->
+
+ <!--Botón para cambiar el nombre-->
 <button
  *ngIf="name !== 'Spiderman'"
  (click)="changeHero()"
@@ -31,12 +34,14 @@ ve como un valor-->
 Cambiar nombre
 </button>
 
+<!--Botón para cambiar la edad-->
 <button
 *ngIf="age !== 25"
   (click)="changeAge()" class="btn btn-primary">
   Cambiar edad
 </button >
 
+<!--Botón para resetear a los valores originales-->
 <button
   (click)="resetFrom()"
   class="btn btn-primary mx-2">

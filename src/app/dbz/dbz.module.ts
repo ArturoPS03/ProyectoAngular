@@ -10,17 +10,17 @@ import { AddCharacterComponent } from './components/add-character/add-character.
 
 
 @NgModule({
-  declarations: [
+  declarations: [ //Declaraciones
     MainPageComponent,
     ListComponent,
     AddCharacterComponent
   ],
-  exports: [
+  exports: [ //Exportación del componente principal, para usarlo externamente
     MainPageComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
+  imports: [ //Importaciones
+    CommonModule, //funcionalidades básicas de Angular
+    FormsModule, //trabajar con formularios y plantillas
   ]
 })
-export class DbzModule { }
+export class DbzModule { } //Definición módulo dbz

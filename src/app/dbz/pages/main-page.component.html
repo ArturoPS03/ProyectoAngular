@@ -4,18 +4,14 @@
 <div class="row">
   <div class="col">
     <!-- onDelete-->
+     <!--Componente para listar personajes-->
     <dbz-list [characterList]="characters"
-              (onDelete)="onDeleteCharacter($event)"></dbz-list>
-
-
-
+    (onDelete)="onDeleteCharacter($event)"></dbz-list>
   </div>
 
   <div class="col">
-
-    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
-
-
-
+<!--Componente para añadir nuevo personaje-->
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character> <!-- Evento para añadir personaje-->
   </div>
+
 </div>
